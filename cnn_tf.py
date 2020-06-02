@@ -1,7 +1,6 @@
 from __future__ import print_function, division
 from builtins import range
-# Note: you may need to update your version of future
-# sudo pip install -U future
+
 
 import numpy as np
 import tensorflow as tf
@@ -11,10 +10,6 @@ from sklearn.utils import shuffle
 
 from util import getImageData, error_rate, init_weight_and_bias, y2indicator
 from ann_tf import HiddenLayer
-
-# differences from Theano:
-# image dimensions are expected to be: N x width x height x color
-# filter shapes are expected to be: filter width x filter height x input feature maps x output feature maps
 
 
 def init_filter(shape, poolsz):
